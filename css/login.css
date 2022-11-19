@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Work Sans;
+    src: url(/fonts/WorkSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family: PT Sans;
+    src: url(/fonts/PTSans-Regular.ttf);
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(69deg, #3282CC 13%, #89C7FF 72%, #7FC2FF 95%, #83C4FF 105%, #1A92FF 120%);
+    background-size: 250%;
+
+    animation: anim-bg-color infinite 10s;
+}
+
+
+@keyframes anim-bg-color {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+
+.bg-snowfall {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-container {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.logo-container {
+    user-select: none;
+}
+.logo-text {
+    font-family: Work Sans, sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.logo-icon {
+    fill: #ffffff;
+}
+
+
+.login-reg-block {
+    width: 375px;
+    height: 380px;
+
+    background-color: #ffffff;
+
+    border-radius: 35px;
+
+    z-index: 1;
+}
+
+.login-reg-form {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.toreg-block {
+    display: flex;
+    gap: 10px;
+}
+
+.toreg-text {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #ffffff;
+}
+
+.toreg-link {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 5px;
+
+    text-decoration: none;
+
+    opacity: .9;
+}
+.toreg-link:hover {
+    opacity: 1;
+}
+
+.toreg-link-text {
+    font-family: PT Sans, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+
+    color: #ffffff;
+}
+
+.toreg-link-icon {
+    fill: #ffffff;
+}
