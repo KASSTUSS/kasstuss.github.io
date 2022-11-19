@@ -272,21 +272,13 @@ body {
 
     background-color: #FFFFFF;
 
-    transition: .1s;
-
-    top: 535px;
-    left: 750px;
+    transition: transform .5s;
 
     z-index: 999;
 }
-
-@keyframes transition-elem {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(100);
-    }
+.transition-elem-show {
+    transform: scale(125);
+    transition: transform .5s;
 }
 
 .transition-bg {

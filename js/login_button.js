@@ -13,9 +13,12 @@ const clickLoginButton = (e) => {
     });
     $('.transition-elem').show();
     $('.transition-elem').css({
-        'animation': 'transition-elem 0.75s ease-out',
         'z-index': '999'
     });
+    setTimeout(() => {
+        document.getElementsByClassName('transition-elem')[0].className = 'transition-elem transition-elem-show';
+    }, 1);   
+    
 
     setTimeout(() => {
         $('.transition-bg').show();
@@ -33,5 +36,5 @@ const clickLoginButton = (e) => {
                 });
             },25);
         },25);
-    },750);
+    },500);
 }
