@@ -10,9 +10,16 @@
     <title>Войти в GSU_Activity</title>
 
     <meta name="theme-color" content="#6699FF">
+
 </head>
 <body>
     <div class="bg-snowfall"></div>
+    <div class="transition-elem"></div>
+    <div class="transition-bg">
+        <div class="loader-container">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
     <div class="main-container">
         
         <div class="logo-container">
@@ -43,7 +50,7 @@
                         
                 </div>
 
-                <button class="log-reg-button">
+                <button id="login_button" class="log-reg-button" onclick="clickLoginButton(event)">
                     ВОЙТИ
                     <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 21.5v-2.15h6.875q.1 0 .2-.1t.1-.2V5.45q0-.1-.1-.2t-.2-.1H12V3h6.875q1.025 0 1.738.712.712.713.712 1.738v13.6q0 1.025-.712 1.738-.713.712-1.738.712Zm-2.15-3.975-1.575-1.6L10.9 13.3H2.675v-2.15H10.9L8.275 8.525l1.575-1.55 5.25 5.275Z"/></svg>
                 </button>
@@ -62,5 +69,11 @@
         </div>
 
     </div>
+
+
+    <script src="/js/jquery-3.6.1.min.js"></script>
+    <script src="/js/jquery.mask.min.js"></script>
+    <script src="/js/input_phone.js"></script>
+    <script src="/js/login_button.js"></script>
 </body>
 </html>
