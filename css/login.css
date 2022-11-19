@@ -6,6 +6,10 @@
     font-family: PT Sans;
     src: url(/fonts/PTSans-Regular.ttf);
 }
+@font-face {
+    font-family: PT Sans Bold;
+    src: url(/fonts/PTSans-Bold.ttf);
+}
 
 html,body {
     margin: 0;
@@ -79,13 +83,135 @@ body {
 .login-reg-form {
     display: flex;
 
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     flex-direction: column;
 
     width: 100%;
     height: 100%;
+}
+
+.login-reg-legend {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+
+    font-family: PT Sans Bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #373737;
+}
+
+.log-reg-inputs-container {
+    display: flex;
+
+    width: 100%;
+    height: 90px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.login-reg-input-container {
+    display: flex;
+    position: relative;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 270px;
+    height: 30px;
+    
+    opacity: .8;
+    transition: opacity .1s;
+}
+
+.login-reg-input {
+    outline: none;
+
+    width: 230px;
+    height: 30px;
+    padding: 3px;
+
+    font-family: PT Sans, sans-serif;
+    font-size: 20px;
+
+    background-color: transparent;
+    color: #373737;
+
+    border: 0;
+    border-bottom: 1px solid #373737;
+}
+
+.login-reg-label {
+    position: absolute;
+    z-index: -1;
+
+    top: 3px;
+    left: 30px;
+
+    font-family: PT Sans, sans-serif;
+    font-size: 20px;
+
+    color: #373737;
+
+    opacity: .8;
+
+    transition: .15s ease-in;
+}
+
+.login-reg-input:focus ~ .login-reg-label,
+.login-reg-input:not(:placeholder-shown) ~ .login-reg-label {
+    top: -20px;
+    opacity: .5;
+    font-size: 14px;
+
+    transition: .15s ease-in;
+}
+
+.log-reg-alert-error {
+    width: 300px;
+    height: 35px;
+}
+
+.log-reg-button {
+    position: relative;
+
+    outline: none;
+
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+
+    margin-top: -55px;
+
+    border: 0;
+
+    background-color: #42A5FF;
+    color: #ffffff;
+    fill: #ffffff;
+
+    opacity: .8;
+
+    transition: .1s;
+}
+.log-reg-button svg {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+.log-reg-button:hover {
+    opacity: 1;
+    transition: .1s;
 }
 
 
