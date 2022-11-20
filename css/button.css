@@ -1,0 +1,30 @@
+.log-reg-button {
+    position: relative;
+
+    outline: none;
+
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+
+    margin-top: -55px;
+
+    border: 0;
+
+    background-color: #42A5FF;
+    color: #ffffff;
+    fill: #ffffff;
+
+    opacity: .8;
+
+    transition: .1s;
+}
+.log-reg-button svg {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+.log-reg-button:hover {
+    opacity: 1;
+    transition: .1s;
+}

@@ -1,0 +1,37 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(69deg, #3282CC 13%, #89C7FF 72%, #7FC2FF 95%, #83C4FF 105%, #1A92FF 120%);
+    background-size: 250%;
+
+    animation: anim-bg-color infinite 10s;
+}
+@keyframes anim-bg-color {
+    0% {
+        background-position: 80% 0%;
+    }
+    50% {
+        background-position: 20% 100%;
+    }
+    100% {
+        background-position: 80% 0%;
+    }
+}
+
+
+.main-container {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
