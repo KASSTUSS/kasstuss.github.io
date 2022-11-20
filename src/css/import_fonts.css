@@ -1,12 +1,12 @@
 @font-face {
-    font-family: Work Sans;
-    src: url(/fonts/WorkSans-ExtraBold.ttf);
+    font-family: "Work Sans";
+    src: url(/fonts/WorkSans-ExtraBold.woff2) format('woff2');
 }
-@font-face {
+/* @font-face {
     font-family: PT Sans;
     src: url(/fonts/PTSans-Regular.ttf);
 }
 @font-face {
     font-family: PT Sans Bold;
     src: url(/fonts/PTSans-Bold.ttf);
-}
+} */
