@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KASSTUSS/kasstuss.github.io/issues"
   },
-  "homepage": "https://github.com/KASSTUSS/kasstuss.github.io#readme"
+  "homepage": "https://github.com/KASSTUSS/kasstuss.github.io#readme",
+  "devDependencies": {
+    "webpack": "^5.75.0"
+  }
 }
