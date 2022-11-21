@@ -9,6 +9,7 @@ const target = devMode ? 'web' : 'browserslist';
 const devtool = devMode ? 'source-map' : undefined;
 
 module.exports = {
+    
     mode,
     target,
     devtool,
@@ -18,6 +19,5 @@ module.exports = {
         clean: true,
         filename: '[name].[contenthash].js',
     }
-    
 
 }
