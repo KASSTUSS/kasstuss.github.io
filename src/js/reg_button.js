@@ -1,8 +1,8 @@
 import Login from "./login.mjs";
 
-const loginButton = document.getElementById('login_button');
+const regButton = document.getElementById('reg_button');
 
-loginButton.addEventListener('click', (event) => {
+regButton.addEventListener('click', (event) => {
     event.preventDefault();
     Login();
 });

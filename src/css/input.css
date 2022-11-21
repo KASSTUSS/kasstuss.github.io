@@ -7,9 +7,9 @@
 
     width: 270px;
     height: 30px;
-    
-    opacity: .8;
-    transition: opacity .1s;
+}
+.login-reg-input-icon {
+    fill: #373737;
 }
 
 .login-reg-input {
@@ -31,19 +31,21 @@
 
 .login-reg-label {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
 
-    top: 3px;
+    user-select: none;
+
+    top: 5px;
     left: 30px;
 
     font-family: PT Sans, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
 
     color: #373737;
 
     opacity: .8;
 
-    transition: .15s ease-in;
+    transition: .15s;
 }
 
 .login-reg-input:focus ~ .login-reg-label,
@@ -52,5 +54,5 @@
     opacity: .5;
     font-size: 14px;
 
-    transition: .15s ease-in;
+    transition: .15s;
 }

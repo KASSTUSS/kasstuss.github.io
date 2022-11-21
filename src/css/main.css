@@ -7,20 +7,6 @@ html,body {
 
 body {
     background: linear-gradient(69deg, #3282CC 13%, #89C7FF 72%, #7FC2FF 95%, #83C4FF 105%, #1A92FF 120%);
-    background-size: 250%;
-
-    animation: anim-bg-color infinite 10s;
-}
-@keyframes anim-bg-color {
-    0% {
-        background-position: 80% 0%;
-    }
-    50% {
-        background-position: 20% 100%;
-    }
-    100% {
-        background-position: 80% 0%;
-    }
 }
 
 

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/reg.css">
 
-    <title>Войти в GSU Activity</title>
+    <title>Регистрация в GSU Activity</title>
 
     <meta name="theme-color" content="#6699FF">
 
@@ -31,7 +31,7 @@
         <div class="login-reg-block">
             <form action="" class="login-reg-form">
 
-                <legend class="login-reg-legend">Вход</legend>
+                <legend class="login-reg-legend">Регистрация</legend>
 
                 <div class="log-reg-inputs-container">
                     <div class="login-reg-input-container">
@@ -51,9 +51,8 @@
                         
                 </div>
 
-                <button id="login_button" class="log-reg-button">
-                    ВОЙТИ
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 21.5v-2.15h6.875q.1 0 .2-.1t.1-.2V5.45q0-.1-.1-.2t-.2-.1H12V3h6.875q1.025 0 1.738.712.712.713.712 1.738v13.6q0 1.025-.712 1.738-.713.712-1.738.712Zm-2.15-3.975-1.575-1.6L10.9 13.3H2.675v-2.15H10.9L8.275 8.525l1.575-1.55 5.25 5.275Z"/></svg>
+                <button id="reg_button" class="log-reg-button">
+                    ЗАРЕГИСТРИРОВАТЬСЯ
                 </button>
 
                 
@@ -62,19 +61,19 @@
         </div>
 
         <div class="to-login-reg-block">
-            <span class="to-login-reg-text">Нет аккаунта?</span>
-            <a href="/reg.html" class="to-login-reg-link">
-                <span class="to-login-reg-link-text">Зарегистрируйтесь </span>
-                <svg class="to-login-reg-link-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M17.975 14.2v-3.05h-3.05V8.5h3.05V5.45h2.65V8.5h3.05v2.65h-3.05v3.05ZM9 11.7q-1.9 0-3.225-1.325Q4.45 9.05 4.45 7.15q0-1.9 1.325-3.225Q7.1 2.6 9 2.6q1.9 0 3.225 1.325Q13.55 5.25 13.55 7.15q0 1.9-1.325 3.225Q10.9 11.7 9 11.7ZM.25 21.525V17.95q0-1.025.488-1.85.487-.825 1.312-1.25 1.65-.85 3.4-1.275Q7.2 13.15 9 13.15q1.8 0 3.55.425 1.75.425 3.4 1.275.825.425 1.313 1.25.487.825.487 1.85v3.575Z"/></svg>
+            <span class="to-login-reg-text">Есть аккаунт?</span>
+            <a href="/src/login.html" class="to-login-reg-link">
+                <span class="to-login-reg-link-text">Войдите </span>
+                <svg class="to-login-reg-link-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 21.5v-2.15h6.875q.1 0 .2-.1t.1-.2V5.45q0-.1-.1-.2t-.2-.1H12V3h6.875q1.025 0 1.738.712.712.713.712 1.738v13.6q0 1.025-.712 1.738-.713.712-1.738.712Zm-2.15-3.975-1.575-1.6L10.9 13.3H2.675v-2.15H10.9L8.275 8.525l1.575-1.55 5.25 5.275Z"/></svg>
             </a>
         </div>
 
     </div>
 
 
-    <script src="/js/jquery-3.6.1.min.js"></script>
-    <script src="/js/jquery.mask.min.js"></script>
-    <script src="/js/input_phone.js"></script>
-    <script src="/js/login_button.js"></script>
+    <script src="/src/js/jquery-3.6.1.min.js"></script>
+    <script src="/src/js/jquery.mask.min.js"></script>
+    <script src="/src/js/input_phone.js"></script>
+    <script type="module" src="/src/js/reg_button.js"></script>
 </body>
 </html>
