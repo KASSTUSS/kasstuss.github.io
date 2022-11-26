@@ -1,1 +1,2 @@
-alert(1);
+import './index.css';
+import './login/index.html'

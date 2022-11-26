@@ -1,0 +1,17 @@
+.logo-container {
+    user-select: none;
+}
+.logo-text {
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.logo-icon {
+    fill: #ffffff;
+}
