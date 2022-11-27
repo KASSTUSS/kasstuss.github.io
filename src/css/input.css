@@ -56,3 +56,26 @@
 
     transition: .15s;
 }
+
+.login-reg-visible-switcher {
+    position: absolute;
+    display: flex;
+
+    align-items: center;
+
+    right: 10px;
+
+    z-index: 1;
+}
+.password-visible-switcher-on {
+    display: none;
+}
+.login-reg-visible-switcher>input {
+    opacity: 0;
+}
+#password-visible-switcher:checked ~ .password-visible-switcher-on {
+    display: block;
+}
+#password-visible-switcher:checked ~ .password-visible-switcher-off {
+    display: none;
+}
