@@ -1,3 +1,6 @@
+input[data-tel-input] {
+    letter-spacing: 2px;
+}
 .login-reg-input-container {
     display: flex;
     position: relative;
@@ -67,15 +70,16 @@
 
     z-index: 1;
 }
-.password-visible-switcher-on {
-    display: none;
+.login-reg-visible-switcher label svg {
+    fill: #373737;
 }
 .login-reg-visible-switcher>input {
     opacity: 0;
 }
-#password-visible-switcher:checked ~ .password-visible-switcher-on {
+#password-visible-switcher:checked ~ .password-visible-switcher-off {
     display: block;
 }
-#password-visible-switcher:checked ~ .password-visible-switcher-off {
+.password-visible-switcher-off,
+#password-visible-switcher:checked ~ .password-visible-switcher-on {
     display: none;
 }
