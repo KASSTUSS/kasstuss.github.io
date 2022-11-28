@@ -1,5 +1,6 @@
-input[data-tel-input] {
-    letter-spacing: 2px;
+input[data-tel-input],
+input[type="password"] {
+    letter-spacing: 1px;
 }
 .login-reg-input-container {
     display: flex;
