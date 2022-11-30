@@ -1,28 +1,27 @@
-const Login = function() {
-
-    document.getElementsByClassName('transition-bg')[0].style.display = 'block';
-    document.getElementsByClassName('transition-bg')[0].style.zIndex = '999';
-
-    setTimeout(() => {
-        document.getElementsByClassName('transition-bg')[0].className = 'transition-bg transition-bg-show';
-        document.getElementsByClassName('loader-container')[0].style.display = 'flex';
-    }, 0);   
-    
-    setTimeout(() => {
-        document.getElementsByClassName('loader-container')[0].style.opacity = '1';
-        document.getElementsByClassName('main-container')[0].style.display = 'none';
-        document.body.style.overflow = 'hidden';
-    },350);
-    document.body.style.overflow = 'auto';
-}
-
 document.addEventListener("DOMContentLoaded", function(){
     let step = 0;
-    let isLastPage = false;
 
     const buttons = document.querySelector(".buttons");
     const nextButton = document.getElementById("reg_next_button");
     const prevButton = document.getElementById("reg_prev_button");
+
+    const Login = function() {
+
+        document.getElementsByClassName('transition-bg')[0].style.display = 'block';
+        document.getElementsByClassName('transition-bg')[0].style.zIndex = '999';
+    
+        setTimeout(() => {
+            document.getElementsByClassName('transition-bg')[0].className = 'transition-bg transition-bg-show';
+            document.getElementsByClassName('loader-container')[0].style.display = 'flex';
+        }, 0);   
+        
+        setTimeout(() => {
+            document.getElementsByClassName('loader-container')[0].style.opacity = '1';
+            document.getElementsByClassName('main-container')[0].style.display = 'none';
+            document.body.style.overflow = 'hidden';
+        },350);
+        document.body.style.overflow = 'auto';
+    }
 
     const pages = document.getElementsByClassName("reg-form-inputs-container");
 
@@ -30,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
         isNext = newStep > step;
 
         if (newStep != pages.length && newStep >= 0) {
+            console.log(newStep);
             pages[step].classList = "reg-form-inputs-container";
             setTimeout(function(){
                 pages[step].style.display = "none";
@@ -85,20 +85,10 @@ document.addEventListener("DOMContentLoaded", function(){
         editPage(step-1);
     });
     window.addEventListener('keydown', (event) => {
-        if(event.keyCode === 13 && !event.repeat) 
+        const inputs = document.getElementsByTagName("input")
+        for (let i=0; i<inputs.length; i++) inputs[i].blur();
+        if(event.keyCode === 13 && !event.repeat)
             editPage(step+1);
-        else
-            return;
-    });
-    window.addEventListener('keydown', (event) => {
-        if(event.keyCode === 13 && !event.repeat) 
-            editPage(step+1);
-        else
-            return;
-    });
-    window.addEventListener('keydown', (event) => {
-        if(event.keyCode === 8 && !event.repeat) 
-            editPage(step-1);
         else
             return;
     });
