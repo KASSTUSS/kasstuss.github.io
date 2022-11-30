@@ -1,8 +1,12 @@
-const passwordInput = document.getElementById('login-password');
+const passwordInputs = document.querySelectorAll('input[data-password]');
 
-document.getElementById('password-visible-switcher').addEventListener('change', function(e){
-    if (e.target.checked)
-        passwordInput.setAttribute('type', 'text');
-    else
-        passwordInput.setAttribute('type', 'password');
-})
+let togglePass = function(switcher) {
+    for (let i=0; i<passwordInputs.length; i++) {
+        if (switcher.checked)
+                passwordInputs[i].setAttribute('type', 'text');
+            else
+                passwordInputs[i].setAttribute('type', 'password');
+            
+            passwordInputs[i].focus();
+    }
+}

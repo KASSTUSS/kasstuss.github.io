@@ -75,4 +75,4 @@ document.addEventListener("DOMContentLoaded", function () {
         phoneInput.addEventListener('input', onPhoneInput, false);
         phoneInput.addEventListener('paste', onPhonePaste, false);
     }
-})
+});
