@@ -15,10 +15,10 @@
 .reg-form-inputs-container {
     height: 200px;
     opacity: 0;
-    transition: opacity .2s;
+    transition: .1s;
 }
 
 .reg-form-inputs-container-show {
     opacity: 1;
-    transition: opacity .2s;
+    transition: .1s;
 }

@@ -33,7 +33,7 @@
 }
 .log-reg-button:hover {
     opacity: 1;
-    transition: .1s;
+    transition: .2s;
 }
 .log-reg-button-gray {
     background-color: #A7A8AA;
