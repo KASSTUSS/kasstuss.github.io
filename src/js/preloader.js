@@ -10,5 +10,5 @@ document.addEventListener("DOMContentLoaded", function(){
             preloaderBG[0].style.display = "none";
             document.body.style.overflow = "";
         },500);
-    },1500);
+    },2500);
 });

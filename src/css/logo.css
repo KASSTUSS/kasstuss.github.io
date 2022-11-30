@@ -26,6 +26,7 @@
 .logo-icon {
     fill: #ffffff;
     transition: fill .5s ease-in-out;
+    transform: translateY(-15px) scale(1.25);
 }
 
 .logo-container-preload {
