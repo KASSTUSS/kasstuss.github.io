@@ -1,4 +1,8 @@
 .to-login-reg-block {
+    position: absolute;
+
+    bottom: 50px;
+
     display: flex;
     gap: 7px;
 }

@@ -1,5 +1,13 @@
 .logo-container {
+    position: absolute;
+
+    top: 35px;
+
     user-select: none;
+    transform: scale(0.75) translateY(0);
+
+    z-index: 101;
+    transition: .5s ease-out;
 }
 .logo-text {
     font-family: "Work Sans", sans-serif;
@@ -9,9 +17,40 @@
     line-height: 50px;
     text-align: center;
 
+
     color: #FFFFFF;
+
+    transition: color .5s ease-out;
 }
 
 .logo-icon {
     fill: #ffffff;
+    transition: fill .5s ease-out;
+}
+
+.logo-container-preload {
+    transform: translateY(calc(50vh - 100%)) scale(1);
+}
+.logo-container-preload .logo-text {
+    color: #42A5FF;
+}
+.logo-container-preload .logo-icon {
+    fill: #42A5FF;
+}
+.preloader-bg {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #ffffff;
+
+    z-index: 100;
+    transition: opacity .5s ease-out;
+}
+.preloader-bg-hidden {
+    opacity: 0;
 }
