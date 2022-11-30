@@ -29,7 +29,7 @@
 }
 
 .logo-container-preload {
-    transform: translateY(calc(50vh - 100%)) scale(1);
+    transform: translateY(calc(50vh - 150%)) scale(1);
     animation: preloader .5s ease-out;
 }
 .logo-container-preload .logo-text {
@@ -61,6 +61,6 @@
         transform: translateY(110vh) scale(0);
     }
     100%{
-        transform: translateY(calc(50vh - 100%)) scale(1);
+        transform: translateY(calc(50vh - 150%)) scale(1);
     }
 }
