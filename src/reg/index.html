@@ -33,17 +33,81 @@
 
                 <legend class="login-reg-legend">Регистрация</legend>
 
-                <div class="log-reg-inputs-container">
-                    <div class="login-reg-input-container">
-                        <svg class="login-reg-input-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M20.225 21.25q-3.3 0-6.45-1.488-3.15-1.487-5.613-3.95Q5.7 13.35 4.213 10.2 2.725 7.05 2.725 3.7q0-.5.275-.775t.775-.275h4.2q.4 0 .713.25.312.25.387.6l.675 3.7q.05.35-.025.638-.075.287-.275.462l-2.525 2.5Q8 12.6 9.613 14.238q1.612 1.637 3.437 2.712l2.625-2.55q.225-.225.45-.288.225-.062.475-.012l3.775.825q.375.075.638.362.262.288.262.663v4.25q0 .5-.275.775t-.775.275Z"/></svg>
-                        <input class="login-reg-input" type="tel" name="login" id="login-phone" placeholder=" ">
-                        <label class="login-reg-label" for="login-phone">Телефон</label>
+                <div class="reg-form-inputs-container reg-form-inputs-container-show" style="display: block;">
+                    <div class="log-reg-inputs-container">
+                        <div class="login-reg-input-container">
+                            <svg class="login-reg-input-icon" xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M4.15 22.3q-1.025 0-1.737-.713-.713-.712-.713-1.737V9.25q0-1.025.713-1.737Q3.125 6.8 4.15 6.8h4.7V3.85q0-.9.625-1.525Q10.1 1.7 11 1.7h2q.9 0 1.525.625.625.625.625 1.525V6.8h4.7q1.025 0 1.737.713.713.712.713 1.737v10.6q0 1.025-.713 1.737-.712.713-1.737.713Zm1.7-4.15h6.2v-.425q0-.475-.262-.862-.263-.388-.688-.563-.55-.25-1.1-.362-.55-.113-1.05-.113t-1.05.113q-.55.112-1.1.362-.425.175-.687.563-.263.387-.263.862Zm8.2-1.5h4.3v-1.6h-4.3Zm-5.1-1.6q.65 0 1.1-.45.45-.45.45-1.1 0-.65-.45-1.1-.45-.45-1.1-.45-.65 0-1.1.45-.45.45-.45 1.1 0 .65.45 1.1.45.45 1.1.45Zm5.1-1.25h4.3v-1.65h-4.3ZM11 8.95h2v-5.1h-2Z"/></svg>
+                            <input class="login-reg-input" type="text" name="reg-surname" id="reg-surname" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Фамилия</label>
+                        </div>
+                        <div class="login-reg-input-container login-reg-input-container-without-icon">
+                            <input class="login-reg-input" type="text" name="reg-name" id="reg-name" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Имя</label>
+                        </div>
+                        <div class="login-reg-input-container login-reg-input-container-without-icon">
+                            <input class="login-reg-input" type="text" name="reg-patronymic" id="reg-patronymic" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Отчество</label>
+                        </div>
                     </div>
-    
-                    <div class="login-reg-input-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.2 22.6q-1.05 0-1.75-.7t-.7-1.75v-9.6q0-1.05.7-1.75t1.75-.7h.6v-2q0-2.2 1.512-3.725Q9.825.85 12 .85q2.175 0 3.688 1.525Q17.2 3.9 17.2 6.1v2h.6q1.05 0 1.75.7t.7 1.75v9.6q0 1.05-.7 1.75t-1.75.7Zm5.8-5.1q.875 0 1.488-.613.612-.612.612-1.487 0-.875-.612-1.488Q12.875 13.3 12 13.3t-1.488.612Q9.9 14.525 9.9 15.4t.612 1.487q.613.613 1.488.613ZM8.95 8.1h6.1v-2q0-1.275-.887-2.188Q13.275 3 12 3t-2.162.912Q8.95 4.825 8.95 6.1Z"/></svg>
-                        <input class="login-reg-input" type="password" name="login" id="login-password" placeholder=" ">
-                        <label class="login-reg-label" for="login-password">Пароль</label>
+                </div>
+
+                <div class="reg-form-inputs-container" style="display: none;">
+                    <div class="log-reg-inputs-container">
+                        <div class="login-reg-input-container">
+                            <svg class="login-reg-input-icon" xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M17.75 13.917V7.938L10 11.833.646 7.125 10 2.417l9.375 4.708v6.792ZM10 17.042l-5.708-2.854v-3.25L10 13.792l5.708-2.854v3.25Z"/></svg>
+                            
+                            <div class="login-reg-input login-reg-select __select" data-state="">
+                                <div class="__select__title" data-default="Option 0">Option 0</div>
+                                <div class="__select__content">
+                                  <input id="singleSelect0" class="__select__input" type="radio" name="singleSelect" checked />
+                                  <label for="singleSelect0" class="__select__label">Option 0</label>
+                                  <input id="singleSelect1" class="__select__input" type="radio" name="singleSelect" />
+                                  <label for="singleSelect1" class="__select__label">Option 1</label>
+                                  <input id="singleSelect2" class="__select__input" type="radio" name="singleSelect" disabled />
+                                  <label for="singleSelect2" class="__select__label">Option 2 (disabled)</label>
+                                  <input id="singleSelect3" class="__select__input" type="radio" name="singleSelect" />
+                                  <label for="singleSelect3" class="__select__label">Option 3</label>
+                                  <input id="singleSelect4" class="__select__input" type="radio" name="singleSelect" />
+                                  <label for="singleSelect4" class="__select__label">Option 4</label>
+                                </div>
+                              </div>
+                            <label class="login-reg-label" for="login-phone">Факультет</label>
+                            
+                        </div>
+                        
+                        <div class="login-reg-input-container login-reg-input-container-without-icon">
+                            <input class="login-reg-input" type="text" name="reg-name" id="reg-name" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Курс</label>
+                        </div>
+                        <div class="login-reg-input-container login-reg-input-container-without-icon">
+                            <input class="login-reg-input" type="text" name="reg-patronymic" id="reg-patronymic" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Группа</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reg-form-inputs-container" style="display: none;">
+                    <div class="log-reg-inputs-container">
+                        <div class="login-reg-input-container">
+                            <label class="login-reg-input-icon" for="reg-email"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20"><path d="M10 18.25q-1.708 0-3.208-.656-1.5-.656-2.615-1.771-1.115-1.115-1.771-2.615-.656-1.5-.656-3.208 0-1.708.656-3.208.656-1.5 1.771-2.615 1.115-1.115 2.615-1.771Q8.292 1.75 10 1.75q1.708 0 3.208.656 1.5.656 2.615 1.771 1.115 1.115 1.771 2.615.656 1.5.656 3.208v1.375q0 1.292-.865 2.042-.864.75-1.989.75-.729 0-1.323-.334-.594-.333-1.031-.937-.604.583-1.407.927-.802.344-1.635.344-1.729 0-2.948-1.219Q5.833 11.729 5.833 10q0-1.75 1.219-2.958Q8.271 5.833 10 5.833q1.75 0 2.958 1.219Q14.167 8.271 14.167 10v1.375q0 .375.354.771t.875.396q.521 0 .875-.396t.354-.771V10q0-2.771-1.927-4.698Q12.771 3.375 10 3.375q-2.771 0-4.698 1.927Q3.375 7.229 3.375 10q0 2.771 1.927 4.698Q7.229 16.625 10 16.625h4.083v1.625Zm0-5.708q1.062 0 1.802-.74t.74-1.802q0-1.062-.74-1.802T10 7.458q-1.062 0-1.802.74T7.458 10q0 1.062.74 1.802t1.802.74Z"/></svg></label>
+                            <input class="login-reg-input" type="text" name="reg-surname" id="reg-email" placeholder=" ">
+                            <label class="login-reg-label" for="login-phone">Эл. почта</label>
+                        </div>
+                        <div class="login-reg-input-container">
+                            <label class="login-reg-input-icon" for="login-phone"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M20.225 21.25q-3.3 0-6.45-1.488-3.15-1.487-5.613-3.95Q5.7 13.35 4.213 10.2 2.725 7.05 2.725 3.7q0-.5.275-.775t.775-.275h4.2q.4 0 .713.25.312.25.387.6l.675 3.7q.05.35-.025.638-.075.287-.275.462l-2.525 2.5Q8 12.6 9.613 14.238q1.612 1.637 3.437 2.712l2.625-2.55q.225-.225.45-.288.225-.062.475-.012l3.775.825q.375.075.638.362.262.288.262.663v4.25q0 .5-.275.775t-.775.275Z"/></svg></label>
+                            <input class="login-reg-input" type="tel" data-tel-input name="login" id="login-phone" placeholder=" " maxlength="25">
+                            <label class="login-reg-label" for="login-phone">Телефон</label>
+                        </div>
+                        <div class="login-reg-input-container">
+                            <label class="login-reg-input-icon" for="reg-password"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M6.2 22.6q-1.05 0-1.75-.7t-.7-1.75v-9.6q0-1.05.7-1.75t1.75-.7h.6v-2q0-2.2 1.512-3.725Q9.825.85 12 .85q2.175 0 3.688 1.525Q17.2 3.9 17.2 6.1v2h.6q1.05 0 1.75.7t.7 1.75v9.6q0 1.05-.7 1.75t-1.75.7Zm5.8-5.1q.875 0 1.488-.613.612-.612.612-1.487 0-.875-.612-1.488Q12.875 13.3 12 13.3t-1.488.612Q9.9 14.525 9.9 15.4t.612 1.487q.613.613 1.488.613ZM8.95 8.1h6.1v-2q0-1.275-.887-2.188Q13.275 3 12 3t-2.162.912Q8.95 4.825 8.95 6.1Z"/></svg></label>
+                            <input class="login-reg-input" type="password" name="login" id="reg-password" placeholder=" ">
+                            <label class="login-reg-label" for="login-password">Придумайте пароль</label>
+                            <label class="login-reg-visible-switcher" for="login-password">
+                                <input type="checkbox" name="password-visible-switcher" id="password-visible-switcher">
+                                <label class="password-visible-switcher-off" for="password-visible-switcher"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="M12 16.175q1.95 0 3.312-1.363 1.363-1.362 1.363-3.312 0-1.95-1.363-3.312Q13.95 6.825 12 6.825q-1.95 0-3.312 1.363Q7.325 9.55 7.325 11.5q0 1.95 1.363 3.312Q10.05 16.175 12 16.175Zm0-1.925q-1.15 0-1.95-.8t-.8-1.95q0-1.15.8-1.95t1.95-.8q1.15 0 1.95.8t.8 1.95q0 1.15-.8 1.95t-1.95.8Zm0 5q-3.8 0-6.887-2.113Q2.025 15.025.65 11.5q1.375-3.525 4.463-5.638Q8.2 3.75 12 3.75q3.8 0 6.888 2.112 3.087 2.113 4.462 5.638-1.375 3.525-4.462 5.637Q15.8 19.25 12 19.25Z"/></svg></label>
+                                <label class="password-visible-switcher-on" for="password-visible-switcher"><svg xmlns="http://www.w3.org/2000/svg" height="24" width="24"><path d="m19.95 22.975-4.325-4.325q-.775.3-1.687.45-.913.15-1.938.15-3.875 0-6.95-2.15t-4.4-5.6q.525-1.35 1.338-2.513Q2.8 7.825 3.85 6.925L1.025 4.05l1.5-1.525 18.95 18.95Zm-7.95-6.8q.275 0 .562-.037.288-.038.463-.113l-5.55-5.55q-.075.225-.112.5-.038.275-.038.525 0 1.975 1.35 3.325T12 16.175Zm7.525.475L16.3 13.425q.175-.425.275-.913.1-.487.1-1.012 0-1.975-1.35-3.325T12 6.825q-.525 0-1.075.125-.55.125-.85.275L7.45 4.6q1.025-.425 2.175-.638Q10.775 3.75 12 3.75q3.875 0 6.938 2.15Q22 8.05 23.35 11.5q-.575 1.525-1.55 2.837-.975 1.313-2.275 2.313Zm-4.8-4.775-3.1-3.1q.675-.1 1.275.112.6.213 1.025.638.45.425.675 1.037.225.613.125 1.313Z"/></svg></label>
+                            </label>
+                        </div>
                     </div>
                 </div>
 
@@ -51,9 +115,16 @@
                         
                 </div>
 
-                <button id="reg_button" class="log-reg-button">
-                    ЗАРЕГИСТРИРОВАТЬСЯ
-                </button>
+                <div class="buttons">
+                    <div class="line-container">
+                        <button id="reg_prev_button" class="log-reg-button log-reg-button-gray" style="display: none; width: 0px; opacity: 0;">
+                            НАЗАД
+                        </button>
+                        <button id="reg_next_button" class="log-reg-button">
+                            ДАЛЕЕ
+                        </button>
+                    </div>
+                </div>
 
                 
                 
@@ -70,10 +141,8 @@
 
     </div>
 
-
-    <script src="/src/js/jquery-3.6.1.min.js"></script>
-    <script src="/src/js/jquery.mask.min.js"></script>
-    <script src="/src/js/input_phone.js"></script>
-    <script type="module" src="/src/js/reg_button.js"></script>
+    <script src="../js/maskPhone.js"></script>
+    <script src="../js/regPagesSwitcher.js"></script>
+    <script src="../js/select.js"></script>
 </body>
 </html>

@@ -1,9 +1,16 @@
+.buttons {
+    width: 215px;
+    height: 40px;
+    transition: width .2s;
+}
+
+
 .log-reg-button {
     position: relative;
 
     outline: none;
 
-    width: 250px;
+    width: 215px;
     height: 40px;
     border-radius: 20px;
 
@@ -17,7 +24,7 @@
 
     opacity: .8;
 
-    transition: .1s;
+    transition: .2s;
 }
 .log-reg-button svg {
     position: absolute;
@@ -27,4 +34,7 @@
 .log-reg-button:hover {
     opacity: 1;
     transition: .1s;
+}
+.log-reg-button-gray {
+    background-color: #A7A8AA;
 }
