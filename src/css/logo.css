@@ -7,7 +7,7 @@
     transform: scale(0.75) translateY(0);
 
     z-index: 101;
-    transition: .5s ease-out;
+    transition: .5s ease-in-out;
 }
 .logo-text {
     font-family: "Work Sans", sans-serif;
@@ -20,16 +20,17 @@
 
     color: #FFFFFF;
 
-    transition: color .5s ease-out;
+    transition: color .5s ease-in-out;
 }
 
 .logo-icon {
     fill: #ffffff;
-    transition: fill .5s ease-out;
+    transition: fill .5s ease-in-out;
 }
 
 .logo-container-preload {
     transform: translateY(calc(50vh - 100%)) scale(1);
+    animation: preloader .5s ease-out;
 }
 .logo-container-preload .logo-text {
     color: #42A5FF;
@@ -49,8 +50,17 @@
     background-color: #ffffff;
 
     z-index: 100;
-    transition: opacity .5s ease-out;
+    transition: opacity .5s ease-in-out;
 }
 .preloader-bg-hidden {
     opacity: 0;
+}
+
+@keyframes preloader {
+    0% {
+        transform: translateY(110vh) scale(0);
+    }
+    100%{
+        transform: translateY(calc(50vh - 100%)) scale(1);
+    }
 }
