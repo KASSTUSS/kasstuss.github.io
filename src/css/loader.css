@@ -44,6 +44,9 @@
     background: #42A5FF;
     animation: lds-circle 3.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
+.lds-circle svg {
+    fill: #fff;
+}
 @keyframes lds-circle {
     0%, 100% {
         animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
