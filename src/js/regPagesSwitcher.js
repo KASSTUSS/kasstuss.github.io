@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
     let step = 0;
 
-    const buttons = document.querySelector(".buttons");
+    const buttons = document.getElementsByClassName("buttons");
     const nextButton = document.getElementById("reg_next_button");
     const prevButton = document.getElementById("reg_prev_button");
 
@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function(){
         isNext = newStep > step;
 
         if (newStep != pages.length && newStep >= 0) {
-            console.log(newStep);
             pages[step].classList = "reg-form-inputs-container";
             setTimeout(function(){
                 pages[step].style.display = "none";
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 prevButton.style.display = "block";
                 nextButton.style.position = "absolute";
                 setTimeout(function(){
-                    buttons.style.width = "250px";
+                    buttons[1].style.width = "250px";
                     prevButton.style.width = nextButton.style.width = "115px";
                     prevButton.style.opacity = "1";
                 },0);
@@ -65,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 prevButton.style.width = "0px";
                 prevButton.style.opacity = "0";
                 nextButton.style.width = "215px";
-                buttons.style.width = "215px";
+                buttons[1].style.width = "215px";
                 setTimeout(function(){
                     prevButton.style.display = "none";
                 },155);
@@ -85,11 +84,10 @@ document.addEventListener("DOMContentLoaded", function(){
         editPage(step-1);
     });
     window.addEventListener('keydown', (event) => {
-        const inputs = document.getElementsByTagName("input")
-        for (let i=0; i<inputs.length; i++) inputs[i].blur();
-        if(event.keyCode === 13 && !event.repeat)
+        const inputs = document.getElementsByTagName("input");
+        if(event.keyCode === 13 && !event.repeat  && document.getElementsByClassName("reg-block")[0].style.display != "none") {
+            for (let i=0; i<inputs.length; i++) inputs[i].blur();
             editPage(step+1);
-        else
-            return;
+        } else return;
     });
 });

@@ -24,7 +24,7 @@ loginButton.addEventListener('click', (event) => {
 });
 
 window.addEventListener('keydown', (event) => {
-    if(event.keyCode === 13 && !event.repeat) 
+    if(event.keyCode === 13 && !event.repeat && document.getElementsByClassName("login-block")[0].style.display != "none")
         Login();
     else
         return;
