@@ -43,3 +43,27 @@
 
     flex-direction: column;
 }
+
+.login-block {
+    height: 300px;
+}
+.login-block .log-reg-inputs-container {
+    width: 100%;
+    height: 90px;
+}
+
+.reg-block {
+    display: none; 
+
+    height: 350px;
+}
+.reg-form-inputs-container {
+    height: 200px;
+    margin-top: 20px;
+    opacity: 0;
+    transition: .1s;
+}
+.reg-form-inputs-container-show {
+    opacity: 1;
+    transition: .1s;
+}
