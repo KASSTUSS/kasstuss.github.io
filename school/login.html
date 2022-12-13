@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>My school - Зачислить ученика</title>
+
+    <link href="//cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
+
+    <script src="./js/login.js"></script>
+</head>
+<body style="background-image: url(./img/tile_background.png);">
+    <div class="container_center">
+        <form class="mui-form login_form" action="#">
+            <div class="login_form_title">
+                Войти в MySchool
+            </div>
+            <div class="mui-textfield mui-textfield--float-label" style="width: 200px">
+                <input type="text" >
+                <label>Логин</label>
+            </div>
+            <div class="mui-textfield mui-textfield--float-label" style="width: 200px">
+                <input type="text" >
+                <label>Пароль</label>
+            </div>
+
+            <div class="container_center">
+                <button onclick="login(event);" class="mui-btn mui-btn--primary" style="background-color: #505090;">Войти</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

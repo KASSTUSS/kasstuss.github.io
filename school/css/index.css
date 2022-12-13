@@ -1,0 +1,388 @@
+/* VAR */
+:root {
+    --main-color: #505090;
+    --secondary-color: #E3E367;
+    --font-light-color: #fff;
+    --font-dark-color: #3F3F44;
+}
+
+/* MAIN */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+[class*="__container"] {
+    margin: 0 auto;
+}
+
+.container_center {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+/* INPUTS */
+
+/* HEADER */
+.header {
+    position: fixed;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 75px;
+    width: 100%;
+
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.3);
+
+    opacity: .95;
+
+    z-index: 10;
+}
+.header_logo {
+    position: absolute;
+    display: flex;
+
+    color: #fff;
+
+    left: 50px;
+    top: 0px;
+}
+.header_logo h1 {
+    font-size: 30px;
+    font-family: inherit;
+}
+.header_logo svg {
+    user-select: none;
+
+    margin-top: 10px;
+    margin-left: 5px;
+
+    fill: var(--secondary-color);
+
+    transition: .15s;
+}
+.header_logo:hover svg {
+    transform: scale(1.1);
+    transition: transform .15s;
+}
+.header_logo:hover {
+    cursor: pointer;
+
+    color: var(--secondary-color);
+    transition: color .15s;
+}
+
+.header_nav {
+    width: 50%;
+    height: 100%;
+}
+.header_nav ul {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+
+
+}
+.header .header_nav ul li {
+    list-style: none;
+}
+.header .header_nav ul li a{
+    user-select: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    
+    color: var(--font-light-color);
+    transition: color .15s;
+}
+.header .header_nav ul li a:hover {
+    text-decoration: none;
+    cursor: pointer;
+
+    color: var(--secondary-color);
+    transition: color .15s;
+}
+
+.header_user {
+    position: absolute;
+    right: 75px;
+    top: 15px;
+}
+.header_user svg {
+    fill: var(--font-light-color);
+
+    transition: fill .15s;
+}
+.header_user > div{
+    position: absolute;
+    right: -40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+
+    width: 125px;
+    height: 70px;
+
+    border-radius: 5px;
+
+    background-color: #fff;
+    opacity: 0;
+
+    z-index: 9;
+
+    transform: translateY(-50px) scale(0);
+    transition: .15s;
+}
+.header_user > div > div:hover {
+    cursor: pointer;
+    color: var(--secondary-color);
+
+    transition: color .15s;
+}
+.header_user:hover svg {
+    fill: var(--secondary-color);
+
+    transition: fill .15s;
+}
+.header_user:hover > div {
+    opacity: .95;
+    transform: translateY(0px) scale(1);
+
+    transition: .15s;
+}
+
+
+/* CONTENT */
+.content__container {
+    margin-top: 75px;
+
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: center;
+}
+.content_header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+
+    width: 100%;
+    height: 105px;
+
+    background-color: #F7F7FF;
+    
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.content_title {
+    position: absolute;
+
+    left: 50px;
+
+    font-weight: bold;
+
+    color: var(--font-dark-color);
+}
+
+.content_form_add_students {
+    position:absolute;
+
+    border-radius: 15px;
+    padding: 45px 25px 25px 25px;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+    
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content_table {
+    
+    margin-top: 65px;
+}
+.content_cards {
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    flex-direction: column;
+
+    margin-top: 65px;
+}
+.content_card {
+    margin-top: 25px;
+
+    width: 650px;
+    height: 65px;
+
+    display: flex;
+
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.2);
+
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition: .25s;
+}
+.card_show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card_data {
+    width: 75%;
+
+    display: flex;
+    align-items: center;
+}
+.card_button {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.card_button button {
+    background-color: #676767;
+    color: var(--font-light-color);
+}
+.card_title_row {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+
+    border-bottom: 1px solid #bcbcbc;
+    
+    width: 100%;
+    height: 50%;
+}
+.card_title_row div {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+.card_data_row {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    
+    width: 100%;
+    height: 50%;
+}
+.card_data_row div {
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_body {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    
+    grid-template-columns: 30% 1fr;
+}
+
+.profile_info {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    flex-direction: column;
+
+    width: 100%;
+    height: 300px;
+
+    margin: 15px;
+
+    border-radius: 20px;
+
+    background-color: #E7E7F0;
+    box-shadow: 2px 2px 8px 0px rgba(34, 60, 80, 0.05);
+
+}
+.profile_info > h3 {
+    width: 100%;
+    padding-bottom: 10px;
+
+    text-align: center;
+
+    border-bottom: 1px dotted #676767;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+.profile_info table {
+    width: 100%;
+    height: 100%;
+}
+.profile_marks {
+    
+    display: flex;  
+    width: 100%;
+    height: 100%;
+
+    flex-direction: column;
+
+    gap: 35px;
+    
+    margin: 15px;
+
+    justify-content: left;
+    align-items: center;
+}
+.profile_marks table {
+    width: 80%;
+}
